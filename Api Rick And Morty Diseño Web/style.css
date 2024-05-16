@@ -1,29 +1,33 @@
-*{
+* {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
+body {
     background-color: aliceblue;
+    margin: 0;
+    padding: 0;
 }
 
-h1, #filters{
+h1,
+#filters {
     text-align: center;
 }
 
-#filters input, #filters #status-filter {
+#filters input,
+#filters #status-filter {
     padding: 8px 16px;
     margin: 10px;
     border: 0;
     font-size: 18px;
     border: 1px solid green;
     border-radius: 5px;
-} 
+}
 
-.container{
+.container {
     width: 80%;
     display: flex;
     justify-content: center;
-    margin: 0 auto;   
+    margin: 0 auto;
 }
 
 #characters {
@@ -33,14 +37,72 @@ h1, #filters{
 }
 
 .character-card {
-    width: 200px;
-    margin: 5px;
-    padding: 10px;
-    background-color: white;
-    border-radius: 8px;
-    
+    width: 220px;
+    margin: 10px;
+    padding: 15px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
-.character-card img{
-    width: 100%;
+.character-card:hover {
+    transform: scale(1.05);
 }
+
+.character-card img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgb(0, 255, 55);
+}
+
+.character-info {
+    color: #ffffff;
+    text-align: center;
+}
+
+.character-name {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.character-status {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.character-species {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.navbar {
+    background-color: rgba(0, 255, 55, 0.5); /* Color verde con transparencia */
+    overflow: hidden;
+}
+
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar img {
+    max-height: 40px;
+    margin-top: 5px;
+}
+body {
+    background-image: url('img/fondo.gif');
+    background-size: cover; /* Para cubrir todo el fondo */
+    background-position: center; /* Para centrar la imagen */
+    background-repeat: no-repeat; /* Para que la imagen no se repita */
+    background-attachment: fixed; /* Para que la imagen no se mueva al hacer scroll */
+    background-color: aliceblue; /* En caso de que la imagen no cargue o se vea en pantallas anchas */
+    margin: 0;
+    padding: 0;
+}
+
